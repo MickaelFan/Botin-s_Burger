@@ -1,5 +1,5 @@
-body{ 
-    background-color: black;
+.x{ 
+    background-color: rgb(0, 0, 0);
     overflow-x: hidden;
 }
 
@@ -7,15 +7,15 @@ header{
     display:flex;
     align-items: center;
     height: 100px;
-    
-
-}
+    background-color: rgb(122, 122, 122);
+    }
 
 .options{
     display:flex;
     align-items: center;
-    width: 200px;
-    height: 50px;
+    justify-content:flex-start;
+    width: 25%;
+    height: 100%;
     float: left;
 }
 
@@ -26,13 +26,14 @@ header{
 
 .contenu {
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .cont_icon {
     position: relative;
-    width: 90px; /* Ajuste cette taille selon ton image */
+    width: 90px; 
     height: 50px;
 }
 
@@ -46,15 +47,14 @@ header{
     top: 49%;
     left: 49.5%;
     transform: translate(-50%, -50%);
-    font-size: 24px; /* Ajuste la taille de l’icône si nécessaire */
-    color: #000; /* Change la couleur selon tes préférences */
-}
-
-
-
-.icon{
+    font-size: 24px; 
     color: #EBB413;
+    
 }
+
+
+
+
 
 .soratra_options{
     font-family: "Poppins", sans-serif;
@@ -66,8 +66,11 @@ header{
 
 .logo{
     position: relative;
-    top:-15px ;
-    left: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
 .logo span{
@@ -77,11 +80,16 @@ header{
     font-weight: 400;
     font-style: normal;
     color: #E5D9C0;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .logo .b{
     position: relative;
-    top: 10px;
     color: #F05741;
     font-size: 60px;
     margin: 0 10px;
@@ -90,12 +98,10 @@ header{
 .log_pan{
    position: relative;
    display: flex;
-   top: -4px;
-   left: 58%;
-  
-   width: 100px;
+   width: 25%;
+   height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-end;
 }
 
 .icon_d{
@@ -104,6 +110,191 @@ header{
     margin: 0 15px;
 }
 
+
+/*md*/
+@media (max-width:991px){
+    header{
+        height: 80px;
+    }
+
+    .hexagon{
+       width: 70px;
+       height: 50px;
+    }
+
+
+    .icon {
+        position: absolute;
+        top: 46%;
+        left: 39%;
+        transform: translate(-50%, -50%);
+        font-size: 20px; 
+        color: #EBB413;
+        
+    }
+
+    .soratra_options{
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        color: #EBB413;
+        position: relative;
+        left: -15px;
+    }
+
+
+    .logo span{
+        text-align: center;
+        font-family: "Lobster", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        color: #E5D9C0;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .logo .b{
+        position: relative;
+        color: #F05741;
+        font-size: 56px;
+        margin: 0 10px;
+    }
+
+    .icon_d{
+        color: #EBB413;
+        font-size: 20px;
+        margin: 0 12px;
+    }
+    
+}
+
+
+/*sm*/
+@media (max-width:767px){
+
+    header{
+        height: 70px;
+    }
+
+    .hexagon{
+       width: 58px;
+       height: 50px;
+    }
+
+
+    .icon {
+        position: absolute;
+        top: 47%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        font-size: 17px; 
+        color: #EBB413;
+        
+    }
+
+    .soratra_options{
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        font-style: normal;
+        color: #EBB413;
+        position: relative;
+        left: -30px;
+    }
+
+
+    .logo span{
+        text-align: center;
+        font-family: "Lobster", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        color: #E5D9C0;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .logo .b{
+        position: relative;
+        color: #F05741;
+        font-size: 50px;
+        margin: 0 10px;
+    }
+
+    .icon_d{
+        color: #EBB413;
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    
+
+}
+
+/*xs*/
+@media (max-width:575px){
+    header{
+        height: 50px;
+    }
+
+    .hexagon{
+       width: 54px;
+       height: 50px;
+    }
+
+
+    .icon {
+        position: absolute;
+        top: 48%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        font-size: 14px; 
+        color: #EBB413;
+        
+    }
+
+    .soratra_options{
+        display: none;
+    }
+
+
+    .logo span{
+        text-align: center;
+        font-family: "Lobster", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        color: #E5D9C0;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .logo .b{
+        position: relative;
+        color: #F05741;
+        font-size: 42px;
+        margin: 0 10px;
+    }
+
+    .icon_d{
+        color: #EBB413;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+}
 
 
 
